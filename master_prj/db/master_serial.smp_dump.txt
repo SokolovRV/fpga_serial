@@ -1,0 +1,16 @@
+
+State Machine - |master_serial|state_machine_tx:inst|state
+Name state.BIT_3_STATE_1 state.BIT_2_STATE_0 state.BIT_1_STATE_1 state.BIT_3_STATE_0 state.BIT_2_STATE_1 state.BIT_1_STATE_0 state.BIT_0_STATE_1 state.BIT_0_STATE_0 state.START_BIT_4_STATE state.START_BIT_3_STATE state.START_BIT_2_STATE state.START_BIT_1_STATE state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.START_BIT_1_STATE 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.START_BIT_2_STATE 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.START_BIT_3_STATE 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.START_BIT_4_STATE 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.BIT_0_STATE_0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.BIT_0_STATE_1 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.BIT_1_STATE_0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.BIT_2_STATE_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.BIT_3_STATE_0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.BIT_1_STATE_1 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.BIT_2_STATE_0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.BIT_3_STATE_1 1 0 0 0 0 0 0 0 0 0 0 0 1 

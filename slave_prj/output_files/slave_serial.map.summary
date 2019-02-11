@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Feb 11 16:37:35 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : slave_serial
+Top-level Entity Name : slave_serial
+Family : Cyclone III
+Total logic elements : 569
+    Total combinational functions : 393
+    Dedicated logic registers : 415
+Total registers : 415
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 3,072
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
