@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at uart_tx_lvds_10_words.v(80): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at uart_tx_lvds_10_words.v(119): always construct contains both blocking and non-blocking assignments

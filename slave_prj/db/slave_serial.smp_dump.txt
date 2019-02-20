@@ -1,13 +1,7 @@
 
-State Machine - |slave_serial|state_machine_rx:inst|state
-Name state.0000 state.BIT_3_STATE_1 state.BIT_3_STATE_0 state.BIT_2_STATE_1 state.BIT_2_STATE_0 state.BIT_1_STATE_1 state.BIT_1_STATE_0 state.BIT_0_STATE_1 state.BIT_0_STATE_0 state.1001 
-state.1001 0 0 0 0 0 0 0 0 0 0 
-state.BIT_0_STATE_0 0 0 0 0 0 0 0 0 1 1 
-state.BIT_0_STATE_1 0 0 0 0 0 0 0 1 0 1 
-state.BIT_1_STATE_0 0 0 0 0 0 0 1 0 0 1 
-state.BIT_1_STATE_1 0 0 0 0 0 1 0 0 0 1 
-state.BIT_2_STATE_0 0 0 0 0 1 0 0 0 0 1 
-state.BIT_2_STATE_1 0 0 0 1 0 0 0 0 0 1 
-state.BIT_3_STATE_0 0 0 1 0 0 0 0 0 0 1 
-state.BIT_3_STATE_1 0 1 0 0 0 0 0 0 0 1 
-state.0000 1 0 0 0 0 0 0 0 0 1 
+State Machine - |slave_serial|decod:inst|state
+Name state.ST4 state.ST3 state.ST2 state.00 
+state.00 0 0 0 0 
+state.ST2 0 0 1 1 
+state.ST3 0 1 0 1 
+state.ST4 1 0 0 1 

@@ -1,16 +1,27 @@
 
-State Machine - |master_serial|state_machine_tx:inst|state
-Name state.BIT_3_STATE_1 state.BIT_2_STATE_0 state.BIT_1_STATE_1 state.BIT_3_STATE_0 state.BIT_2_STATE_1 state.BIT_1_STATE_0 state.BIT_0_STATE_1 state.BIT_0_STATE_0 state.START_BIT_4_STATE state.START_BIT_3_STATE state.START_BIT_2_STATE state.START_BIT_1_STATE state.0000 
-state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.START_BIT_1_STATE 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.START_BIT_2_STATE 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.START_BIT_3_STATE 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.START_BIT_4_STATE 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.BIT_0_STATE_0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.BIT_0_STATE_1 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.BIT_1_STATE_0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.BIT_2_STATE_1 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.BIT_3_STATE_0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.BIT_1_STATE_1 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.BIT_2_STATE_0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.BIT_3_STATE_1 1 0 0 0 0 0 0 0 0 0 0 0 1 
+State Machine - |master_serial|serial_receiver:inst3|state
+Name state.STOP state.ST_7 state.ST_6 state.ST_5 state.ST_4 state.ST_3 state.ST_2 state.ST_1 state.ST_0 state.START state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 
+state.START 0 0 0 0 0 0 0 0 0 1 1 
+state.ST_0 0 0 0 0 0 0 0 0 1 0 1 
+state.ST_1 0 0 0 0 0 0 0 1 0 0 1 
+state.ST_2 0 0 0 0 0 0 1 0 0 0 1 
+state.ST_3 0 0 0 0 0 1 0 0 0 0 1 
+state.ST_4 0 0 0 0 1 0 0 0 0 0 1 
+state.ST_5 0 0 0 1 0 0 0 0 0 0 1 
+state.ST_6 0 0 1 0 0 0 0 0 0 0 1 
+state.ST_7 0 1 0 0 0 0 0 0 0 0 1 
+state.STOP 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |master_serial|serial_transmitter:inst|state
+Name state.STOP state.ST_7 state.ST_6 state.ST_5 state.ST_4 state.ST_3 state.ST_2 state.ST_1 state.ST_0 state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 
+state.ST_0 0 0 0 0 0 0 0 0 1 1 
+state.ST_1 0 0 0 0 0 0 0 1 0 1 
+state.ST_2 0 0 0 0 0 0 1 0 0 1 
+state.ST_3 0 0 0 0 0 1 0 0 0 1 
+state.ST_4 0 0 0 0 1 0 0 0 0 1 
+state.ST_5 0 0 0 1 0 0 0 0 0 1 
+state.ST_6 0 0 1 0 0 0 0 0 0 1 
+state.ST_7 0 1 0 0 0 0 0 0 0 1 
+state.STOP 1 0 0 0 0 0 0 0 0 1 

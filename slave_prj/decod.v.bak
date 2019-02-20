@@ -1,0 +1,19 @@
+module decod (input clk, output reg [3:0] out)
+
+localparam [3:0] ST1 = 4'b0001;
+localparam [3:0] ST2 = 4'b0010;
+localparam [3:0] ST3 = 4'b0100;
+localparam [3:0] ST4 = 4'b1000;
+
+reg [3:0] state = 4'b0000'
+
+always @(posedge clk)
+	case(state)
+		ST1: begin out <= 4'b0001; state <= ST2; end
+		ST2: begin out <= 4'b0010; state <= ST3; end
+		ST3: begin out <= 4'b0011; state <= ST4; end
+		ST4: begin out <= 4'b0100; state <= ST1; end
+		default: out = 4'b0000;
+	end
+endmodule
+		

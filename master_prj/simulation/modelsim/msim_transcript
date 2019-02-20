@@ -1,0 +1,340 @@
+# Reading C:/modeltech64_10_5/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do master_serial_run_msim_gate_verilog.do
+# vmap altera_ver C:/modelsim_lib/verilog_libs/altera_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap altera_ver C:/modelsim_lib/verilog_libs/altera_ver 
+# Copying C:/modeltech64_10_5/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# vmap cycloneiii_ver C:/modelsim_lib/verilog_libs/cycloneiii_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap cycloneiii_ver C:/modelsim_lib/verilog_libs/cycloneiii_ver 
+# Modifying modelsim.ini
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {master_serial_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:56:23 on Feb 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." master_serial_6_1200mv_85c_slow.vo 
+# -- Compiling module master_serial
+# 
+# Top level modules:
+# 	master_serial
+# End time: 16:56:24 on Feb 18,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim {E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:56:24 on Feb 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim" E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt 
+# -- Compiling module master_serial_vlg_tst
+# 
+# Top level modules:
+# 	master_serial_vlg_tst
+# End time: 16:56:24 on Feb 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc"  master_serial_vlg_tst
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=""+acc"" master_serial_vlg_tst 
+# Start time: 16:56:24 on Feb 18,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.master_serial_vlg_tst(fast)
+# Loading work.master_serial(fast)
+# Loading altera_ver.dffeas(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__1)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__2)
+# Loading cycloneiii_ver.cycloneiii_io_ibuf(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__3)
+# Loading cycloneiii_ver.cycloneiii_io_obuf(fast)
+# Loading cycloneiii_ver.cycloneiii_clkctrl(fast)
+# Loading cycloneiii_ver.cycloneiii_mux41(fast)
+# Loading cycloneiii_ver.cycloneiii_ena_reg(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__4)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__5)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__6)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__7)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__8)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__9)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__10)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__11)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__12)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__13)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__14)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__15)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__16)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__17)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__18)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__19)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__20)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__21)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__22)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__23)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__24)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__25)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__26)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__27)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__28)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__29)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__30)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__31)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__32)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__33)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__34)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__35)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__36)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__37)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__38)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__39)
+# Loading instances from master_serial_6_1200mv_85c_v_slow.sdo
+# Loading timing data from master_serial_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /master_serial_vlg_tst File: E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt
+# 
+# add wave *
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ms
+# Running testbench
+do master_serial_run_msim_gate_verilog.do
+# vmap altera_ver C:/modelsim_lib/verilog_libs/altera_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap altera_ver C:/modelsim_lib/verilog_libs/altera_ver 
+# Modifying modelsim.ini
+# vmap cycloneiii_ver C:/modelsim_lib/verilog_libs/cycloneiii_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap cycloneiii_ver C:/modelsim_lib/verilog_libs/cycloneiii_ver 
+# Modifying modelsim.ini
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Roman@DESKTOP-656OBOJ.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# vmap work gate_work
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {master_serial_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:03:10 on Feb 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." master_serial_6_1200mv_85c_slow.vo 
+# -- Compiling module master_serial
+# 
+# Top level modules:
+# 	master_serial
+# End time: 17:03:10 on Feb 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim {E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:03:10 on Feb 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim" E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt 
+# -- Compiling module master_serial_vlg_tst
+# 
+# Top level modules:
+# 	master_serial_vlg_tst
+# End time: 17:03:10 on Feb 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc"  master_serial_vlg_tst
+# End time: 17:03:11 on Feb 18,2019, Elapsed time: 0:06:47
+# Errors: 0, Warnings: 1
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=""+acc"" master_serial_vlg_tst 
+# Start time: 17:03:11 on Feb 18,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.master_serial_vlg_tst(fast)
+# Loading work.master_serial(fast)
+# Loading altera_ver.dffeas(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__1)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__2)
+# Loading cycloneiii_ver.cycloneiii_io_ibuf(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__3)
+# Loading cycloneiii_ver.cycloneiii_io_obuf(fast)
+# Loading cycloneiii_ver.cycloneiii_clkctrl(fast)
+# Loading cycloneiii_ver.cycloneiii_mux41(fast)
+# Loading cycloneiii_ver.cycloneiii_ena_reg(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__4)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__5)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__6)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__7)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__8)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__9)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__10)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__11)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__12)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__13)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__14)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__15)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__16)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__17)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__18)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__19)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__20)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__21)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__22)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__23)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__24)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__25)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__26)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__27)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__28)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__29)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__30)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__31)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__32)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__33)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__34)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__35)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__36)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__37)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__38)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__39)
+# Loading instances from master_serial_6_1200mv_85c_v_slow.sdo
+# Loading timing data from master_serial_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /master_serial_vlg_tst File: E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt
+# 
+# add wave *
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ms
+# Running testbench
+do master_serial_run_msim_gate_verilog.do
+# vmap altera_ver C:/modelsim_lib/verilog_libs/altera_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap altera_ver C:/modelsim_lib/verilog_libs/altera_ver 
+# Modifying modelsim.ini
+# vmap cycloneiii_ver C:/modelsim_lib/verilog_libs/cycloneiii_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap cycloneiii_ver C:/modelsim_lib/verilog_libs/cycloneiii_ver 
+# Modifying modelsim.ini
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Roman@DESKTOP-656OBOJ.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# vmap work gate_work
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {master_serial_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:28:43 on Feb 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." master_serial_6_1200mv_85c_slow.vo 
+# -- Compiling module master_serial
+# 
+# Top level modules:
+# 	master_serial
+# End time: 17:28:43 on Feb 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim {E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:28:43 on Feb 18,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim" E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt 
+# -- Compiling module master_serial_vlg_tst
+# 
+# Top level modules:
+# 	master_serial_vlg_tst
+# End time: 17:28:43 on Feb 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc"  master_serial_vlg_tst
+# End time: 17:28:44 on Feb 18,2019, Elapsed time: 0:25:33
+# Errors: 0, Warnings: 1
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=""+acc"" master_serial_vlg_tst 
+# Start time: 17:28:44 on Feb 18,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.master_serial_vlg_tst(fast)
+# Loading work.master_serial(fast)
+# Loading altera_ver.dffeas(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__1)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__2)
+# Loading cycloneiii_ver.cycloneiii_io_ibuf(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__3)
+# Loading cycloneiii_ver.cycloneiii_io_obuf(fast)
+# Loading cycloneiii_ver.cycloneiii_clkctrl(fast)
+# Loading cycloneiii_ver.cycloneiii_mux41(fast)
+# Loading cycloneiii_ver.cycloneiii_ena_reg(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__4)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__5)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__6)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__7)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__8)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__9)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__10)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__11)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__12)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__13)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__14)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__15)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__16)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__17)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__18)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__19)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__20)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__21)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__22)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__23)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__24)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__25)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__26)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__27)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__28)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__29)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__30)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__31)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__32)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__33)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__34)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__35)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__36)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__37)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__38)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__39)
+# Loading instances from master_serial_6_1200mv_85c_v_slow.sdo
+# Loading timing data from master_serial_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /master_serial_vlg_tst File: E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt
+# 
+# add wave *
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ms
+# Running testbench
+# End time: 17:29:33 on Feb 18,2019, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 0
