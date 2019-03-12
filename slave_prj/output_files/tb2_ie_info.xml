@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for ALTERA CORPORATION-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>32</AddressBits>
+		<ApplicationError>
+		<CommandLine/>		<ErrorMessage></ErrorMessage>
+		<Line>3748</Line>
+		<SourceFile>/quartus/pgm/pgmio/pgmio_flash_mapping.cpp</SourceFile>
+		<StackTrace>
+		</StackTrace>
+		<Subsystem>PGMIO</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>0</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation/>
+			<TopLevelEntityName/>
+		</Compilation>
+		<DateInvoked>2019/02/28 13:50:56</DateInvoked>
+		<ElapsedTime>0</ElapsedTime>
+		<IP>192.168.42.251</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>false</IsQt>
+		<License>
+			<Edition>Full Version</Edition>
+			<LicenseHostID>38d54779bb3f</LicenseHostID>
+		</License>
+		<Machine>
+			<CPUCountLogical>4</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>3192</CPUSpeed>
+			<Hostname>DESKTOP-656OBOJ</Hostname>
+			<NIC>
+				<Address>38d54779bb3f</Address>
+			</NIC>
+			<NIC>
+				<Address>026d4b3e3333</Address>
+			</NIC>
+			<OS>Windows Vista</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.2</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+			<TotalVirtualRAM>0</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus_cpf</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName/>
+			<Revision/>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>170218955921824.15082233560581</InstallationID>
+			<Version>
+				<Build>222</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Full Version</Edition>
+				<ServicePack>0</ServicePack>
+				<VersionNumber>9.1</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>38114166182260.150822418008888</UserID>
+			<UserName>Roman</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2009-08-20</SchemaVersion>
+</ProgramExecution>
+

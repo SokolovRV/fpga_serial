@@ -11,8 +11,13 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj {E:/git_hub/fpga_serial/master_prj/serial_receiver.v}
+vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj {E:/git_hub/fpga_serial/master_prj/data_mux.v}
+vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj {E:/git_hub/fpga_serial/master_prj/clk_dev_3.v}
+vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj {E:/git_hub/fpga_serial/master_prj/serial_tx_ctrl.v}
+vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj {E:/git_hub/fpga_serial/master_prj/crc_16_rtu.v}
 vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj {E:/git_hub/fpga_serial/master_prj/serial_transmitter.v}
+vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj {E:/git_hub/fpga_serial/master_prj/pll1.v}
+vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj/db {E:/git_hub/fpga_serial/master_prj/db/pll1_altpll1.v}
 
 vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim {E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt}
 

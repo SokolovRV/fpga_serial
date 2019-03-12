@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Feb 18 16:48:36 2019
+Analysis & Synthesis Status : Successful - Mon Mar 11 15:21:10 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : master_serial
 Top-level Entity Name : master_serial
 Family : Cyclone III
-Total logic elements : 79
-    Total combinational functions : 59
-    Dedicated logic registers : 60
-Total registers : 60
-Total pins : 25
+Total logic elements : 803
+    Total combinational functions : 538
+    Dedicated logic registers : 588
+Total registers : 588
+Total pins : 29
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 11,264
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1

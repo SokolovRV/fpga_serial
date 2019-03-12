@@ -1,7 +1,14 @@
 
-State Machine - |slave_serial|decod:inst|state
-Name state.ST4 state.ST3 state.ST2 state.00 
-state.00 0 0 0 0 
-state.ST2 0 0 1 1 
-state.ST3 0 1 0 1 
-state.ST4 1 0 0 1 
+State Machine - |slave_serial|serial_receiver:inst|state
+Name state.STOP state.ST_7 state.ST_6 state.ST_5 state.ST_4 state.ST_3 state.ST_2 state.ST_1 state.ST_0 state.START state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 
+state.START 0 0 0 0 0 0 0 0 0 1 1 
+state.ST_0 0 0 0 0 0 0 0 0 1 0 1 
+state.ST_1 0 0 0 0 0 0 0 1 0 0 1 
+state.ST_2 0 0 0 0 0 0 1 0 0 0 1 
+state.ST_3 0 0 0 0 0 1 0 0 0 0 1 
+state.ST_4 0 0 0 0 1 0 0 0 0 0 1 
+state.ST_5 0 0 0 1 0 0 0 0 0 0 1 
+state.ST_6 0 0 1 0 0 0 0 0 0 0 1 
+state.ST_7 0 1 0 0 0 0 0 0 0 0 1 
+state.STOP 1 0 0 0 0 0 0 0 0 0 1 

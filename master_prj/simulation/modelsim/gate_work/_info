@@ -9,55 +9,65 @@ z2
 cModel Technology
 Z0 dE:/git_hub/fpga_serial/master_prj/simulation/modelsim
 T_opt
-!s110 1550500124
-VB:]E_5FCa69doY3doY4TR1
-04 21 4 work master_serial_vlg_tst fast 0
-=1-38d54779bb3f-5c6ac11c-1ac-1738
-o-quiet -auto_acc_if_foreign -work work -L altera_ver -L cycloneiii_ver -L gate_work -L work +acc
-Z1 tCvgOpt 0
+!s110 1550647528
+V30[@@YRd@V>ZBme_fNHQi0
+Z1 04 21 4 work master_serial_vlg_tst fast 0
+=1-38d54779bb3f-5c6d00e7-231-4b4
+Z2 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L cycloneiii_ver -L gate_work -L work +acc
+Z3 tCvgOpt 0
 n@_opt
-OL;O;10.5;63
-vmaster_serial
-Z2 !s110 1550500123
-!i10b 1
-!s100 P_i<L4CER:8z>EkTTK7j50
-IkFMNI:PCMino=gAl=V_RQ0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;O;10.5;63
 R0
-w1550497731
-8master_serial_6_1200mv_85c_slow.vo
-Fmaster_serial_6_1200mv_85c_slow.vo
+T_opt1
+!s110 1550648680
+VHGzXgfACNLWPbmDYb@Q[?3
+R1
+=1-38d54779bb3f-5c6d0568-104-1d4c
+R2
+R3
+n@_opt1
+R4
+vmaster_serial
+Z5 !s110 1550648679
+!i10b 1
+!s100 m53cG0J0TM`8Jk[S3GA3<2
+INJ=:a2DS2@gJgm:4DdH`31
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1550648651
+8master_serial.vo
+Fmaster_serial.vo
 L0 31
-Z4 OL;L;10.5;63
+Z7 OL;L;10.5;63
 r1
 !s85 0
 31
-Z5 !s108 1550500123.000000
-!s107 master_serial_6_1200mv_85c_slow.vo|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|master_serial_6_1200mv_85c_slow.vo|
+Z8 !s108 1550648679.000000
+!s107 master_serial.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|master_serial.vo|
 !i113 0
-Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 !s92 -vlog01compat -work work +incdir+. -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+R3
 vmaster_serial_vlg_tst
-R2
+R5
 !i10b 1
 !s100 ^g`5KA7NL]ZA:O=7J7=gm0
 I578hi]X7EhUM>B_BfKVaM1
-R3
+R6
 R0
 w1550500119
 8E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt
 FE:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt
 L0 28
-R4
+R7
 r1
 !s85 0
 31
-R5
+R8
 !s107 E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim|E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt|
 !i113 0
-R6
+R9
 !s92 -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+R3

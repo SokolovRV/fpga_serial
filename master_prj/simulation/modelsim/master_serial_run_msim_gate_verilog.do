@@ -7,7 +7,7 @@ if {[file exists gate_work]} {
 vlib gate_work
 vmap work gate_work
 
-vlog -vlog01compat -work work +incdir+. {master_serial_6_1200mv_85c_slow.vo}
+vlog -vlog01compat -work work +incdir+. {master_serial.vo}
 
 vlog -vlog01compat -work work +incdir+E:/git_hub/fpga_serial/master_prj/simulation/modelsim {E:/git_hub/fpga_serial/master_prj/simulation/modelsim/master_serial.vt}
 

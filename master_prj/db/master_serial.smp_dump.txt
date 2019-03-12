@@ -1,17 +1,15 @@
 
-State Machine - |master_serial|serial_receiver:inst3|state
-Name state.STOP state.ST_7 state.ST_6 state.ST_5 state.ST_4 state.ST_3 state.ST_2 state.ST_1 state.ST_0 state.START state.0000 
-state.0000 0 0 0 0 0 0 0 0 0 0 0 
-state.START 0 0 0 0 0 0 0 0 0 1 1 
-state.ST_0 0 0 0 0 0 0 0 0 1 0 1 
-state.ST_1 0 0 0 0 0 0 0 1 0 0 1 
-state.ST_2 0 0 0 0 0 0 1 0 0 0 1 
-state.ST_3 0 0 0 0 0 1 0 0 0 0 1 
-state.ST_4 0 0 0 0 1 0 0 0 0 0 1 
-state.ST_5 0 0 0 1 0 0 0 0 0 0 1 
-state.ST_6 0 0 1 0 0 0 0 0 0 0 1 
-state.ST_7 0 1 0 0 0 0 0 0 0 0 1 
-state.STOP 1 0 0 0 0 0 0 0 0 0 1 
+State Machine - |master_serial|crc_16_rtu:inst12|state
+Name state.STAGE_6 state.STAGE_5 state.STAGE_4 state.STAGE_3 state.STAGE_2 state.STAGE_1 state.STAGE_0 state.0000 state.STAGE_7 
+state.0000 0 0 0 0 0 0 0 0 0 
+state.STAGE_0 0 0 0 0 0 0 1 1 0 
+state.STAGE_1 0 0 0 0 0 1 0 1 0 
+state.STAGE_2 0 0 0 0 1 0 0 1 0 
+state.STAGE_3 0 0 0 1 0 0 0 1 0 
+state.STAGE_4 0 0 1 0 0 0 0 1 0 
+state.STAGE_5 0 1 0 0 0 0 0 1 0 
+state.STAGE_6 1 0 0 0 0 0 0 1 0 
+state.STAGE_7 0 0 0 0 0 0 0 1 1 
 
 State Machine - |master_serial|serial_transmitter:inst|state
 Name state.STOP state.ST_7 state.ST_6 state.ST_5 state.ST_4 state.ST_3 state.ST_2 state.ST_1 state.ST_0 state.0000 

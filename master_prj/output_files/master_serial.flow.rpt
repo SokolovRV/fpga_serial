@@ -1,5 +1,5 @@
 Flow report for master_serial
-Mon Feb 18 16:49:15 2019
+Mon Mar 11 15:21:29 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -19,17 +19,15 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 
 
 
-+-----------------------------------------------------------------------------+
-; EDA Netlist Writer Summary                                                  ;
-+---------------------------+-------------------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Feb 18 16:48:52 2019           ;
-; Revision Name             ; master_serial                                   ;
-; Top-level Entity Name     ; master_serial                                   ;
-; Family                    ; Cyclone III                                     ;
-; Simulation Files Creation ; Successful                                      ;
-; Flow Status               ; Successful - Mon Feb 18 16:49:15 2019           ;
-; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-+---------------------------+-------------------------------------------------+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Mon Mar 11 15:21:29 2019 ;
+; Revision Name             ; master_serial                         ;
+; Top-level Entity Name     ; master_serial                         ;
+; Family                    ; Cyclone III                           ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
 
 
 ----------------
@@ -54,22 +52,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Feb 18 16:48:52 2019           ;
+; Flow Status                        ; Successful - Mon Mar 11 15:21:29 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; master_serial                                   ;
 ; Top-level Entity Name              ; master_serial                                   ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C16F484C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 78 / 15,408 ( < 1 % )                           ;
-;     Total combinational functions  ; 59 / 15,408 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 60 / 15,408 ( < 1 % )                           ;
-; Total registers                    ; 60                                              ;
-; Total pins                         ; 26 / 347 ( 7 % )                                ;
+; Total logic elements               ; 773 / 15,408 ( 5 % )                            ;
+;     Total combinational functions  ; 540 / 15,408 ( 4 % )                            ;
+;     Dedicated logic registers      ; 588 / 15,408 ( 4 % )                            ;
+; Total registers                    ; 588                                             ;
+; Total pins                         ; 30 / 347 ( 9 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 516,096 ( 0 % )                             ;
+; Total memory bits                  ; 11,264 / 516,096 ( 2 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                 ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                  ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -78,53 +76,76 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/18/2019 16:48:34 ;
+; Start date & time ; 03/11/2019 15:21:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; master_serial       ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                         ;
-+---------------------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                                   ; Value                                                                 ; Default Value ; Entity Name ; Section Id     ;
-+---------------------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                             ; 62488678349631.155049771405196                                        ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME                          ; i1                                                                    ; --            ; --          ; test1          ;
-; EDA_GENERATE_GATE_LEVEL_SIMULATION_COMMAND_SCRIPT ; On                                                                    ; --            ; --          ; eda_simulation ;
-; EDA_GENERATE_RTL_SIMULATION_COMMAND_SCRIPT        ; On                                                                    ; --            ; --          ; eda_simulation ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH              ; test1                                                                 ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT                            ; Verilog Hdl                                                           ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                               ; ModelSim (Verilog)                                                    ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS                      ; TEST_BENCH_MODE                                                       ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                               ; simulation/modelsim/master_serial.vt                                  ; --            ; --          ; test1          ;
-; EDA_TEST_BENCH_MODULE_NAME                        ; master_serial_vlg_tst                                                 ; --            ; --          ; test1          ;
-; EDA_TEST_BENCH_NAME                               ; test1                                                                 ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_RUN_SIM_FOR                        ; 1 ms                                                                  ; --            ; --          ; test1          ;
-; EDA_TIME_SCALE                                    ; 1 ps                                                                  ; --            ; --          ; eda_simulation ;
-; EDA_USER_COMPILED_SIMULATION_LIBRARY_DIRECTORY    ; C:\modelsim_lib                                                       ; --            ; --          ; eda_simulation ;
-; ENABLE_SIGNALTAP                                  ; Off                                                                   ; --            ; --          ; --             ;
-; IP_TOOL_NAME                                      ; ALTPLL                                                                ; --            ; --          ; --             ;
-; IP_TOOL_NAME                                      ; SignalTap II Logic Analyzer                                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                                   ; 13.0                                                                  ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                                   ; 13.0                                                                  ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP                            ; 85                                                                    ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP                            ; 0                                                                     ; --            ; --          ; --             ;
-; MISC_FILE                                         ; pll1.bsf                                                              ; --            ; --          ; --             ;
-; MISC_FILE                                         ; pll1_bb.v                                                             ; --            ; --          ; --             ;
-; MISC_FILE                                         ; pll1.ppf                                                              ; --            ; --          ; --             ;
-; MISC_FILE                                         ; signtap.bsf                                                           ; --            ; --          ; --             ;
-; MISC_FILE                                         ; signtap_bb.v                                                          ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE                       ; 1.2V                                                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                                   ; 16764057                                                              ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL               ; PLACEMENT_AND_ROUTING                                                 ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE                            ; SOURCE                                                                ; --            ; --          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL                         ; None (CONSERVATIVE)                                                   ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION                     ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                 ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY                          ; output_files                                                          ; --            ; --          ; --             ;
-; SLD_FILE                                          ; E:/git_hub/fpga_serial/master_prj/output_files/stp3_auto_stripped.stp ; --            ; --          ; --             ;
-; USE_SIGNALTAP_FILE                                ; output_files/stp3.stp                                                 ; --            ; --          ; --             ;
-+---------------------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                  ;
++---------------------------------------------------+------------------------------------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                                   ; Value                                                                        ; Default Value ; Entity Name ; Section Id       ;
++---------------------------------------------------+------------------------------------------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID                             ; 62488678349631.155230686301128                                               ; --            ; --          ; --               ;
+; EDA_DESIGN_INSTANCE_NAME                          ; i1                                                                           ; --            ; --          ; test1            ;
+; EDA_GENERATE_GATE_LEVEL_SIMULATION_COMMAND_SCRIPT ; On                                                                           ; --            ; --          ; eda_simulation   ;
+; EDA_GENERATE_RTL_SIMULATION_COMMAND_SCRIPT        ; On                                                                           ; --            ; --          ; eda_simulation   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH              ; test1                                                                        ; --            ; --          ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT                            ; Verilog Hdl                                                                  ; --            ; --          ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                               ; ModelSim (Verilog)                                                           ; <None>        ; --          ; --               ;
+; EDA_TEST_BENCH_ENABLE_STATUS                      ; TEST_BENCH_MODE                                                              ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_FILE                               ; simulation/modelsim/master_serial.vt                                         ; --            ; --          ; test1            ;
+; EDA_TEST_BENCH_MODULE_NAME                        ; master_serial_vlg_tst                                                        ; --            ; --          ; test1            ;
+; EDA_TEST_BENCH_NAME                               ; test1                                                                        ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_RUN_SIM_FOR                        ; 1 ms                                                                         ; --            ; --          ; test1            ;
+; EDA_TIME_SCALE                                    ; 1 ps                                                                         ; --            ; --          ; eda_simulation   ;
+; EDA_USER_COMPILED_SIMULATION_LIBRARY_DIRECTORY    ; C:\modelsim_lib                                                              ; --            ; --          ; eda_simulation   ;
+; ENABLE_SIGNALTAP                                  ; On                                                                           ; --            ; --          ; --               ;
+; IP_TOOL_NAME                                      ; ALTPLL                                                                       ; --            ; --          ; --               ;
+; IP_TOOL_NAME                                      ; SignalTap II Logic Analyzer                                                  ; --            ; --          ; --               ;
+; IP_TOOL_VERSION                                   ; 13.0                                                                         ; --            ; --          ; --               ;
+; IP_TOOL_VERSION                                   ; 13.0                                                                         ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP                            ; 85                                                                           ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP                            ; 0                                                                            ; --            ; --          ; --               ;
+; MISC_FILE                                         ; pll1.bsf                                                                     ; --            ; --          ; --               ;
+; MISC_FILE                                         ; pll1_bb.v                                                                    ; --            ; --          ; --               ;
+; MISC_FILE                                         ; pll1.ppf                                                                     ; --            ; --          ; --               ;
+; MISC_FILE                                         ; signtap.bsf                                                                  ; --            ; --          ; --               ;
+; MISC_FILE                                         ; signtap_bb.v                                                                 ; --            ; --          ; --               ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE                       ; 1.2V                                                                         ; --            ; --          ; --               ;
+; PARTITION_COLOR                                   ; 16764057                                                                     ; --            ; --          ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL               ; PLACEMENT_AND_ROUTING                                                        ; --            ; --          ; Top              ;
+; PARTITION_NETLIST_TYPE                            ; SOURCE                                                                       ; --            ; --          ; Top              ;
+; POWER_BOARD_THERMAL_MODEL                         ; None (CONSERVATIVE)                                                          ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION                     ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                        ; --            ; --          ; --               ;
+; PROJECT_OUTPUT_DIRECTORY                          ; output_files                                                                 ; --            ; --          ; --               ;
+; SLD_FILE                                          ; E:/git_hub/fpga_serial/master_prj/output_files/stp3_auto_stripped.stp        ; --            ; --          ; --               ;
+; SLD_NODE_CREATOR_ID                               ; 110                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                              ; sld_signaltap                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_DATA_BITS=11                                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_TRIGGER_BITS=11                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_NODE_INFO=805334528                                                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_POWER_UP_TRIGGER=0                                                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_INVERSION_MASK_LENGTH=57                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_SEGMENT_SIZE=1024                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_STATE_FLOW_USE_GENERATED=0                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_STATE_BITS=11                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_BUFFER_FULL_STOP=1                                                       ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_CURRENT_RESOURCE_WIDTH=1                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_NODE_CRC_LOWORD=9849                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_NODE_CRC_HIWORD=42695                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_TRIGGER_LEVEL=1                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_SAMPLE_DEPTH=1024                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_TRIGGER_IN_ENABLED=0                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT                     ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                ; --            ; --          ; auto_signaltap_0 ;
+; USE_SIGNALTAP_FILE                                ; output_files/stp3.stp                                                        ; --            ; --          ; --               ;
++---------------------------------------------------+------------------------------------------------------------------------------+---------------+-------------+------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -132,13 +153,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 499 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:06     ; 1.5                     ; 1215 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 442 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 532 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 455 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 419 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 565 MB              ; 00:00:05                           ;
+; Fitter                    ; 00:00:07     ; 1.5                     ; 1209 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 450 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 560 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 464 MB              ; 00:00:04                           ;
+; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:19                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -152,7 +172,6 @@ applicable agreement for further details.
 ; Assembler                 ; DESKTOP-656OBOJ  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-656OBOJ  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-656OBOJ  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-656OBOJ  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -164,7 +183,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off master_serial -
 quartus_asm --read_settings_files=off --write_settings_files=off master_serial -c master_serial
 quartus_sta master_serial -c master_serial
 quartus_eda --read_settings_files=off --write_settings_files=off master_serial -c master_serial
-quartus_eda --read_settings_files=on --write_settings_files=off master_serial -c master_serial --gen_testbench
 
 
 
