@@ -8,17 +8,16 @@ output reg [7:0] byte_out, data_select;
 output reg       start_tx, ready, data_lock, reset_crc;
 output reg [2:0] state;
 
- parameter [7:0] n_word = 8'h01;
+parameter [7:0] n_word = 8'h01;
 //localparam [7:0] select_cnt = n_word - 8'h01;
 
 localparam [2:0] IDLE      = 3'b000;
-localparam [2:0] LCK_DATA = 3'b001;
+localparam [2:0] DELAY     = 3'b001;
 localparam [2:0] FST_BYTE  = 3'b010;
 localparam [2:0] SD_HI     = 3'b011;
 localparam [2:0] SD_LO     = 3'b100;
 localparam [2:0] SD_CRC_HI = 3'b101;
 localparam [2:0] SD_CRC_LO = 3'b110;
-localparam [2:0] DELAY     = 3'b111;
 
 //reg [2:0]  state     =  3'b000;
 reg [2:0]  delay_cnt =  3'b000;
@@ -26,7 +25,6 @@ reg [2:0]  delay_cnt =  3'b000;
 reg pre_strb_0 = 1'b0;
 reg pre_strb_1 = 1'b0;
 reg fst_flg    = 1'b0;
-reg [1:0] lck_flg    = 2'b00;
 
 always @(posedge clk) begin
 	pre_strb_0 <= start;
@@ -36,11 +34,8 @@ always @(posedge clk) begin
 		state <= IDLE;
 		reset_crc <= 1'b1;
 		data_select <= 8'h00;
-		delay_cnt <= 3'b000;
 		ready <= 1'b0;
-		start_tx <= 1'b0;
-		fst_flg <= 1'b0;
-		lck_flg <= 2'b00;
+		start_tx <= 1'b0;	
 	end
 	else begin	
 		case(state)
@@ -49,7 +44,7 @@ always @(posedge clk) begin
 					ready <= 1'b0;
 					data_lock <= 1'b1;
 					reset_crc <= 1'b0;
-					state <= LCK_DATA;
+					state <= DELAY;
 				end
 				else begin
 					ready <= 1'b1;
@@ -57,14 +52,20 @@ always @(posedge clk) begin
 					state <= IDLE;
 				end
 			end
-			LCK_DATA: begin
+			
+			DELAY: begin
+				fst_flg <= 1'b0;
 				
-				if(lck_flg[1])
+				if(&delay_cnt) begin
+					delay_cnt <= 3'b000;
 					state <= FST_BYTE;
-				else
-					state <= LCK_DATA;
-				lck_flg <= lck_flg + 2'b01;
+				end
+				else begin
+					delay_cnt <= delay_cnt + 3'b001;
+					state <= DELAY;
+				end
 			end
+			
 			FST_BYTE: begin
 				byte_out <= data_in[15:8];
 				fst_flg <= 1'b1;
@@ -101,10 +102,9 @@ always @(posedge clk) begin
 				end
 			end
 			SD_LO: begin	
-				data_lock <= 1'b0;
-			
 				if(tx_done && !pre_strb_1) begin	
 					start_tx <= 1'b1;
+					data_lock <= 1'b0;
 					if(data_select == n_word) begin
 						data_select <= 8'h00;
 						byte_out <= crc_16[15:8];
@@ -136,25 +136,14 @@ always @(posedge clk) begin
 			SD_CRC_LO: begin
 				start_tx <= 1'b0;
 				if(tx_done && !pre_strb_1) begin
-					state <= DELAY;
+					state <= IDLE;
+					ready <= 1'b1;
 				end
 				else begin
 					state <= SD_CRC_LO;
 				end
 			end
-			DELAY: begin
-				fst_flg <= 1'b0;
-				lck_flg <= 2'b00;
-				if(delay_cnt[2]) begin
-					delay_cnt <= 3'b000;
-					state <= IDLE;
-					ready <= 1'b1;
-				end
-				else begin
-					delay_cnt <= delay_cnt + 3'b001;
-					state <= DELAY;
-				end
-			end
+			
 			default: begin
 				state <= IDLE;
 			end	
