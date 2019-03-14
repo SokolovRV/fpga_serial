@@ -16,7 +16,6 @@ always @(posedge clk) begin
 		data_out <= 16'h0000;
 	else begin
 		pre_strb <= data_lock;
-
 		if(data_lock && !pre_strb)
 			case(selector)
 				0: data_out <= data_0;
